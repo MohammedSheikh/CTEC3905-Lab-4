@@ -6,7 +6,7 @@ body {
   background: #222;
 }
 header {
-  background: #ccc;
+  background: green;
   color: #444;
   text-align: center;
 }
@@ -21,7 +21,7 @@ h2 {
 main {
   max-width: 1000px;
   margin: 0 auto;
-  background: #eee;
+  background: red;
   text-align: center;
   padding: 2px;
 }
@@ -34,4 +34,47 @@ section {
 }
 section:hover {
   background: #666;
+}
+
+/* FIRST BREAKPOINT (MEDIUM SIZE) */
+@media screen and (min-width: 500px) {
+
+  body {
+      margin:0;
+      padding:0;
+      background: black;
+      font-family: "Verdana", Georgia, Serif;
+  }
+
+section {
+  border:2px solid purple;
+display: block;
+}
+
+  header {
+     font-size: 6px;
+  }
+}
+
+/* SECOND BREAKPOINT (LARGE SIZE) */
+@media screen and (min-width: 1000px) {
+body {
+    margin:0;
+    padding:0;
+    background: #fff;
+    font-family: "Arial", Georgia, Serif;
+}
+
+main {
+    max-width: 1500px;
+}
+
+header {
+   font-size: 30px;
+}
+
+section{
+  display: inline-block;
+}
+
 }
